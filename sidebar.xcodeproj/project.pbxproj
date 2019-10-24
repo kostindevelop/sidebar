@@ -12,8 +12,13 @@
 		B51B52A4236091F1008E4808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A2236091F1008E4808 /* Main.storyboard */; };
 		B51B52A6236091F5008E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A5236091F5008E4808 /* Assets.xcassets */; };
 		B51B52A9236091F5008E4808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A7236091F5008E4808 /* LaunchScreen.storyboard */; };
-		B51B52B62361935C008E4808 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52B52361935C008E4808 /* UsersViewController.swift */; };
+		B51B52B62361935C008E4808 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52B52361935C008E4808 /* HomeViewController.swift */; };
 		B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52BB23619538008E4808 /* MenuTableViewController.swift */; };
+		B51B52BF23619861008E4808 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52BE23619861008E4808 /* MenuItemTableViewCell.swift */; };
+		B51B52C123619E48008E4808 /* MenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C023619E48008E4808 /* MenuAppearance.swift */; };
+		B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C22361A93E008E4808 /* UserContainer.swift */; };
+		B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C72361ADA9008E4808 /* ListContainer.swift */; };
+		B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C92361ADBA008E4808 /* SettingsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +29,13 @@
 		B51B52A5236091F5008E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51B52A8236091F5008E4808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51B52AA236091F5008E4808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B51B52B52361935C008E4808 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		B51B52B52361935C008E4808 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B51B52BB23619538008E4808 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		B51B52BE23619861008E4808 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		B51B52C023619E48008E4808 /* MenuAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAppearance.swift; sourceTree = "<group>"; };
+		B51B52C22361A93E008E4808 /* UserContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContainer.swift; sourceTree = "<group>"; };
+		B51B52C72361ADA9008E4808 /* ListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainer.swift; sourceTree = "<group>"; };
+		B51B52C92361ADBA008E4808 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		B51B529B236091F1008E4808 /* sidebar */ = {
 			isa = PBXGroup;
 			children = (
+				B51B52CC2361AECE008E4808 /* Services */,
 				B51B52B123618DD6008E4808 /* Sources */,
 				B51B52B223618DDC008E4808 /* Supported files */,
 			);
@@ -69,6 +80,8 @@
 			children = (
 				B51B52B32361932B008E4808 /* MenuController */,
 				B51B52B42361933F008E4808 /* UsersController */,
+				B51B52C52361A94D008E4808 /* ListController */,
+				B51B52C62361A95C008E4808 /* SettingsController */,
 				B51B52A2236091F1008E4808 /* Main.storyboard */,
 			);
 			path = Sources;
@@ -89,7 +102,10 @@
 		B51B52B32361932B008E4808 /* MenuController */ = {
 			isa = PBXGroup;
 			children = (
+				B51B52BD2361982D008E4808 /* MenuItemCell */,
 				B51B52BB23619538008E4808 /* MenuTableViewController.swift */,
+				B51B52C023619E48008E4808 /* MenuAppearance.swift */,
+				B51B52B52361935C008E4808 /* HomeViewController.swift */,
 			);
 			path = MenuController;
 			sourceTree = "<group>";
@@ -97,9 +113,48 @@
 		B51B52B42361933F008E4808 /* UsersController */ = {
 			isa = PBXGroup;
 			children = (
-				B51B52B52361935C008E4808 /* UsersViewController.swift */,
+				B51B52CB2361AEC5008E4808 /* Model */,
+				B51B52C22361A93E008E4808 /* UserContainer.swift */,
 			);
 			path = UsersController;
+			sourceTree = "<group>";
+		};
+		B51B52BD2361982D008E4808 /* MenuItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				B51B52BE23619861008E4808 /* MenuItemTableViewCell.swift */,
+			);
+			path = MenuItemCell;
+			sourceTree = "<group>";
+		};
+		B51B52C52361A94D008E4808 /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				B51B52C72361ADA9008E4808 /* ListContainer.swift */,
+			);
+			path = ListController;
+			sourceTree = "<group>";
+		};
+		B51B52C62361A95C008E4808 /* SettingsController */ = {
+			isa = PBXGroup;
+			children = (
+				B51B52C92361ADBA008E4808 /* SettingsContainer.swift */,
+			);
+			path = SettingsController;
+			sourceTree = "<group>";
+		};
+		B51B52CB2361AEC5008E4808 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B51B52CC2361AECE008E4808 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +230,13 @@
 			files = (
 				B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */,
 				B51B529D236091F1008E4808 /* AppDelegate.swift in Sources */,
+				B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */,
+				B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */,
+				B51B52C123619E48008E4808 /* MenuAppearance.swift in Sources */,
 				B51B529F236091F1008E4808 /* SceneDelegate.swift in Sources */,
-				B51B52B62361935C008E4808 /* UsersViewController.swift in Sources */,
+				B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */,
+				B51B52B62361935C008E4808 /* HomeViewController.swift in Sources */,
+				B51B52BF23619861008E4808 /* MenuItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
