@@ -12,6 +12,8 @@
 		B51B52A4236091F1008E4808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A2236091F1008E4808 /* Main.storyboard */; };
 		B51B52A6236091F5008E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A5236091F5008E4808 /* Assets.xcassets */; };
 		B51B52A9236091F5008E4808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A7236091F5008E4808 /* LaunchScreen.storyboard */; };
+		B51B52B62361935C008E4808 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52B52361935C008E4808 /* UsersViewController.swift */; };
+		B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52BB23619538008E4808 /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B51B52A5236091F5008E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51B52A8236091F5008E4808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51B52AA236091F5008E4808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51B52B52361935C008E4808 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		B51B52BB23619538008E4808 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		B51B52B123618DD6008E4808 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B51B52B32361932B008E4808 /* MenuController */,
+				B51B52B42361933F008E4808 /* UsersController */,
 				B51B52A2236091F1008E4808 /* Main.storyboard */,
 			);
 			path = Sources;
@@ -78,6 +84,22 @@
 				B51B52AA236091F5008E4808 /* Info.plist */,
 			);
 			path = "Supported files";
+			sourceTree = "<group>";
+		};
+		B51B52B32361932B008E4808 /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				B51B52BB23619538008E4808 /* MenuTableViewController.swift */,
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		B51B52B42361933F008E4808 /* UsersController */ = {
+			isa = PBXGroup;
+			children = (
+				B51B52B52361935C008E4808 /* UsersViewController.swift */,
+			);
+			path = UsersController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */,
 				B51B529D236091F1008E4808 /* AppDelegate.swift in Sources */,
 				B51B529F236091F1008E4808 /* SceneDelegate.swift in Sources */,
+				B51B52B62361935C008E4808 /* UsersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH5E4S62N6;
-				INFOPLIST_FILE = sidebar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sidebar/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.sidebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -315,12 +341,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH5E4S62N6;
-				INFOPLIST_FILE = sidebar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sidebar/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.sidebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
