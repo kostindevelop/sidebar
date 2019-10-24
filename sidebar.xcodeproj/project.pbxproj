@@ -19,6 +19,9 @@
 		B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C22361A93E008E4808 /* UserContainer.swift */; };
 		B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C72361ADA9008E4808 /* ListContainer.swift */; };
 		B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C92361ADBA008E4808 /* SettingsContainer.swift */; };
+		B55690242361B22A003F259D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690232361B22A003F259D /* Networker.swift */; };
+		B55690262361B2AA003F259D /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690252361B2AA003F259D /* General.swift */; };
+		B55690282361B2F3003F259D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690272361B2F3003F259D /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		B51B52C22361A93E008E4808 /* UserContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContainer.swift; sourceTree = "<group>"; };
 		B51B52C72361ADA9008E4808 /* ListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainer.swift; sourceTree = "<group>"; };
 		B51B52C92361ADBA008E4808 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
+		B55690232361B22A003F259D /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		B55690252361B2AA003F259D /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		B55690272361B2F3003F259D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 		B51B52CB2361AEC5008E4808 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B55690272361B2F3003F259D /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +160,8 @@
 		B51B52CC2361AECE008E4808 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B55690232361B22A003F259D /* Networker.swift */,
+				B55690252361B2AA003F259D /* General.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,13 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */,
+				B55690262361B2AA003F259D /* General.swift in Sources */,
 				B51B529D236091F1008E4808 /* AppDelegate.swift in Sources */,
 				B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */,
 				B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */,
 				B51B52C123619E48008E4808 /* MenuAppearance.swift in Sources */,
+				B55690242361B22A003F259D /* Networker.swift in Sources */,
 				B51B529F236091F1008E4808 /* SceneDelegate.swift in Sources */,
 				B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */,
 				B51B52B62361935C008E4808 /* HomeViewController.swift in Sources */,
+				B55690282361B2F3003F259D /* UserModel.swift in Sources */,
 				B51B52BF23619861008E4808 /* MenuItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
