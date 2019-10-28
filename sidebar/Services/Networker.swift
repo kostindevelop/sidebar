@@ -29,7 +29,9 @@ class Networker {
                 return
             }
             let userModel = try? JSONDecoder().decode(UserModel.self, from: data)
-            completion(userModel, nil)
+            DispatchQueue.main.async {
+                completion(userModel, nil)
+            }
         }
         task.resume()
     }
