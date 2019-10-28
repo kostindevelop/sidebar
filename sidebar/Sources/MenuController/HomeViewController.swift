@@ -8,7 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+@available(iOS 13.0, *)
+class HomeViewController: BaseViewControlle {
 
     let transition = MenuAppearance()
     var topView = UIView()
@@ -22,9 +23,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         usersView.isHidden = false
     }
-
+    
     @IBAction func didTapMenuButton(_ sender: UIBarButtonItem) {
-        guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuTableViewController else { return }
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let menuViewController = storyboard.instantiateViewController(identifier: "MenuViewController") as? MenuTableViewController else { return }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self
         menuViewController.didTapMenuType = { menuTappedType in
@@ -54,6 +56,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+@available(iOS 13.0, *)
 extension HomeViewController: UIViewControllerTransitioningDelegate {
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.isPresenting = false

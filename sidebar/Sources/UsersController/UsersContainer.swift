@@ -1,5 +1,5 @@
 //
-//  UserContainer.swift
+//  UsersContainer.swift
 //  sidebar
 //
 //  Created by Konstantin Igorevich on 24.10.2019.
@@ -8,18 +8,22 @@
 
 import UIKit
 
-class UserContainer: UIViewController {
+class UsersContainer: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .darkGray
-        // Do any additional setup after loading the view.
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+            self.title = "Users"
+        }
     }
 
 
 }
 
-extension UserContainer: UITableViewDataSource {
+extension UsersContainer: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
@@ -32,4 +36,4 @@ extension UserContainer: UITableViewDataSource {
     
 }
 
-extension UserContainer: UITableViewDelegate {}
+extension UsersContainer: UITableViewDelegate {}

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B51B529D236091F1008E4808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B529C236091F1008E4808 /* AppDelegate.swift */; };
-		B51B529F236091F1008E4808 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B529E236091F1008E4808 /* SceneDelegate.swift */; };
 		B51B52A4236091F1008E4808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A2236091F1008E4808 /* Main.storyboard */; };
 		B51B52A6236091F5008E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A5236091F5008E4808 /* Assets.xcassets */; };
 		B51B52A9236091F5008E4808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51B52A7236091F5008E4808 /* LaunchScreen.storyboard */; };
@@ -16,18 +15,19 @@
 		B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52BB23619538008E4808 /* MenuTableViewController.swift */; };
 		B51B52BF23619861008E4808 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52BE23619861008E4808 /* MenuItemTableViewCell.swift */; };
 		B51B52C123619E48008E4808 /* MenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C023619E48008E4808 /* MenuAppearance.swift */; };
-		B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C22361A93E008E4808 /* UserContainer.swift */; };
+		B51B52C32361A93E008E4808 /* UsersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C22361A93E008E4808 /* UsersContainer.swift */; };
 		B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C72361ADA9008E4808 /* ListContainer.swift */; };
 		B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B52C92361ADBA008E4808 /* SettingsContainer.swift */; };
 		B55690242361B22A003F259D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690232361B22A003F259D /* Networker.swift */; };
 		B55690262361B2AA003F259D /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690252361B2AA003F259D /* General.swift */; };
 		B55690282361B2F3003F259D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55690272361B2F3003F259D /* UserModel.swift */; };
+		B560C6AA23672DBE00B370BF /* BaseViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560C6A923672DBE00B370BF /* BaseViewControlle.swift */; };
+		B560C6AC23672DF500B370BF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560C6AB23672DF500B370BF /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B51B5299236091F1008E4808 /* sidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51B529C236091F1008E4808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51B529E236091F1008E4808 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B51B52A3236091F1008E4808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51B52A5236091F5008E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51B52A8236091F5008E4808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,12 +36,14 @@
 		B51B52BB23619538008E4808 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B51B52BE23619861008E4808 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		B51B52C023619E48008E4808 /* MenuAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAppearance.swift; sourceTree = "<group>"; };
-		B51B52C22361A93E008E4808 /* UserContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContainer.swift; sourceTree = "<group>"; };
+		B51B52C22361A93E008E4808 /* UsersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersContainer.swift; sourceTree = "<group>"; };
 		B51B52C72361ADA9008E4808 /* ListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainer.swift; sourceTree = "<group>"; };
 		B51B52C92361ADBA008E4808 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
 		B55690232361B22A003F259D /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		B55690252361B2AA003F259D /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		B55690272361B2F3003F259D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B560C6A923672DBE00B370BF /* BaseViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControlle.swift; sourceTree = "<group>"; };
+		B560C6AB23672DF500B370BF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				B51B52CC2361AECE008E4808 /* Services */,
 				B51B52B123618DD6008E4808 /* Sources */,
+				B560C6A723672D8700B370BF /* Common */,
 				B51B52B223618DDC008E4808 /* Supported files */,
 			);
 			path = sidebar;
@@ -96,7 +99,6 @@
 		B51B52B223618DDC008E4808 /* Supported files */ = {
 			isa = PBXGroup;
 			children = (
-				B51B529E236091F1008E4808 /* SceneDelegate.swift */,
 				B51B529C236091F1008E4808 /* AppDelegate.swift */,
 				B51B52A5236091F5008E4808 /* Assets.xcassets */,
 				B51B52A7236091F5008E4808 /* LaunchScreen.storyboard */,
@@ -120,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B51B52CB2361AEC5008E4808 /* Model */,
-				B51B52C22361A93E008E4808 /* UserContainer.swift */,
+				B51B52C22361A93E008E4808 /* UsersContainer.swift */,
 			);
 			path = UsersController;
 			sourceTree = "<group>";
@@ -164,6 +166,23 @@
 				B55690252361B2AA003F259D /* General.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B560C6A723672D8700B370BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B560C6A823672D9100B370BF /* BaseController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B560C6A823672D9100B370BF /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				B560C6A923672DBE00B370BF /* BaseViewControlle.swift */,
+				B560C6AB23672DF500B370BF /* BaseNavigationController.swift */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,15 +258,16 @@
 			files = (
 				B51B52BC23619538008E4808 /* MenuTableViewController.swift in Sources */,
 				B55690262361B2AA003F259D /* General.swift in Sources */,
+				B560C6AC23672DF500B370BF /* BaseNavigationController.swift in Sources */,
 				B51B529D236091F1008E4808 /* AppDelegate.swift in Sources */,
-				B51B52C32361A93E008E4808 /* UserContainer.swift in Sources */,
+				B51B52C32361A93E008E4808 /* UsersContainer.swift in Sources */,
 				B51B52CA2361ADBA008E4808 /* SettingsContainer.swift in Sources */,
 				B51B52C123619E48008E4808 /* MenuAppearance.swift in Sources */,
 				B55690242361B22A003F259D /* Networker.swift in Sources */,
-				B51B529F236091F1008E4808 /* SceneDelegate.swift in Sources */,
 				B51B52C82361ADA9008E4808 /* ListContainer.swift in Sources */,
 				B51B52B62361935C008E4808 /* HomeViewController.swift in Sources */,
 				B55690282361B2F3003F259D /* UserModel.swift in Sources */,
+				B560C6AA23672DBE00B370BF /* BaseViewControlle.swift in Sources */,
 				B51B52BF23619861008E4808 /* MenuItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +416,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH5E4S62N6;
 				INFOPLIST_FILE = "$(SRCROOT)/sidebar/Supported files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +437,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH5E4S62N6;
 				INFOPLIST_FILE = "$(SRCROOT)/sidebar/Supported files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
